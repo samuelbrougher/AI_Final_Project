@@ -1,0 +1,30 @@
+For running Heuristic Search:
+
+Please navigate to the folder in which the Heuristic_Search.py script resides. Then, an input will look like:
+
+python3 Heuristic_Search.py <heuristic> <graph_name>
+
+There are 5 heuristics to choose from: "none", "unreachable_heuristic", "round_trip", "horn" and "cheeseman".
+
+There are 12 graphs in total to choose from, and their syntax is: graph_1...graph_12, for example.
+
+So an actual input might look like  python3 Heuristic_Search.py cheeseman graph_1
+
+The output is a list of all the discovered paths, with the number of backtracks up to that point to reach the particular
+path.
+
+
+For running Simulated Annealing:
+
+Please navigate to the folder in which the Heuristic_Search.py script resides. Then, an input will look like:
+
+python3 Simulated_Annealing.py <initial_temperature> <iteration_stop> <graph_name>
+
+You  can select any temperature and number of iterations you would like to run, and select any graph from graph_1...graph_12.
+
+A sample input looks like: python3  Simulated_Annealing.py 1000 1000 graph_3
+
+There is an output for each start/end vertex and the random initial state (with those start and end vertices) is
+displayed. The worse move made simply records the number of times the annealing algorithm opts to move to a higher
+cost state in order to perturb the system. Finally, the cost of the settled-upon path is printed along with that path
+(it may be a global optima or a local optima).
